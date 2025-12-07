@@ -10,6 +10,7 @@ body {
   color: #fff;
 }
 
+/* Footer base */
 footer {
   background: #000;
   width: 100%;
@@ -35,34 +36,38 @@ footer .top {
   font-weight: 600;
 }
 
-/* Social media icons */
-.media-icons a {
+/* Social media icons: each element with class "media-icons" */
+.icons-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.media-icons {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 42px;
   height: 42px;
-  margin-left: 12px;
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
   font-size: 18px;
 }
 
-/* Individual colors for icons */
-.media-icons a:nth-child(1) {
+/* individual background colors */
+.media-icons.fa-facebook {
   background: #4267b2;
 }
-.media-icons a:nth-child(2) {
+.media-icons.fa-twitter {
   background: #1da1f2;
 }
-.media-icons a:nth-child(3) {
+.media-icons.fa-instagram {
   background: #e1306c;
 }
-.media-icons a:nth-child(4) {
+.media-icons.fa-linkedin {
   background: #0077b5;
 }
-.media-icons a:nth-child(5) {
+.media-icons.fa-youtube-play {
   background: #ff0000;
 }
 
@@ -111,7 +116,7 @@ footer .top {
   padding-left: 4px;
 }
 
-/* Bottom copyright bar */
+/* bottom bar */
 .bottom-details {
   background: #1b1b1b;
 }
