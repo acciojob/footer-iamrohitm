@@ -22,6 +22,7 @@ footer .content {
   padding: 40px 30px 30px;
 }
 
+/* Top row: logo + social icons */
 footer .top {
   display: flex;
   align-items: center;
@@ -34,6 +35,7 @@ footer .top {
   font-weight: 600;
 }
 
+/* Social media icons */
 .media-icons a {
   display: inline-flex;
   align-items: center;
@@ -44,9 +46,10 @@ footer .top {
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
 }
 
-/* Different colors per icon (optional but matches demo) */
+/* Individual colors for icons */
 .media-icons a:nth-child(1) {
   background: #4267b2;
 }
@@ -63,7 +66,7 @@ footer .top {
   background: #ff0000;
 }
 
-/* Link boxes */
+/* Link columns */
 .link-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +111,7 @@ footer .top {
   padding-left: 4px;
 }
 
-/* Bottom details */
+/* Bottom copyright bar */
 .bottom-details {
   background: #1b1b1b;
 }
@@ -127,7 +130,7 @@ footer .top {
   text-decoration: none;
 }
 
-/* Responsive */
+/* Responsive behaviour */
 @media (max-width: 900px) {
   .link-boxes .box {
     width: calc(100% / 2 - 10px);
