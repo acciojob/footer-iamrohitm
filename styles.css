@@ -1,1 +1,153 @@
-/* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  margin-top: 40px;
+}
+
+footer .content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px 30px;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.logo-details .logo_name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-left: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Different colors per icon (optional but matches demo) */
+.media-icons a:nth-child(1) {
+  background: #4267b2;
+}
+.media-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+.media-icons a:nth-child(3) {
+  background: #e1306c;
+}
+.media-icons a:nth-child(4) {
+  background: #0077b5;
+}
+.media-icons a:nth-child(5) {
+  background: #ff0000;
+}
+
+/* Link boxes */
+.link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+
+.link-boxes .box li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.link-boxes .box .link_name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 35px;
+  height: 2px;
+  background: #fff;
+}
+
+.link-boxes .box a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.link-boxes .box a:hover {
+  opacity: 0.8;
+  padding-left: 4px;
+}
+
+/* Bottom details */
+.bottom-details {
+  background: #1b1b1b;
+}
+
+.bottom-details .bottom_text {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.bottom-details .bottom_text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .link-boxes .box {
+    width: calc(100% / 2 - 10px);
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .bottom-details .bottom_text {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .link-boxes .box {
+    width: 100%;
+  }
+}
